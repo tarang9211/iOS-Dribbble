@@ -16,8 +16,16 @@ class DribbleApiService {
     class func fetchShots(completion: Shots_Alias) {
         
         let url = Config.rootUrl + "?access_token=\(Config.accessToken)"
+        
         HttpService.fetchData(url: URL(string: url)!) { (data, error) in
             
+            if error != nil {
+                
+            }
+            
+            if data != nil {
+                print(data)
+            }
         }
     }
 }

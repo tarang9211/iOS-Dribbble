@@ -25,8 +25,12 @@ class HttpService {
             }
             
             if data != nil {
-                let jsonData = try? JSONSerialization.jsonObject(with: data! , options: .mutableContainers) as! NSArray
-                completion(jsonData, nil)
+                
+                guard let jsonData = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers) else {
+                    //error occured during serialization
+                    return
+                }
+                completion((jsonData as! NSArray), nil)
             }
             
             

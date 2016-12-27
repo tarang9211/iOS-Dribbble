@@ -26,13 +26,18 @@ class DribbleApiService {
             guard let response = data else { return }
             
             let shots: [DribbbleShotsModel] = response.map({ (data) -> DribbbleShotsModel in
-                let item    = data as! NSDictionary
-                print(item)
+                let item        = data as! NSDictionary
                 let title       = (item["title"] ?? "") as! String
                 let id          = (item["id"] ?? 0) as! Int
                 let username    = (item["username"] ?? "") as! String
                 let viewscount  = (item["views_count"] ?? 0) as! Int
-                return DribbbleShotsModel(title: title, id: id, username: username, viewscount: viewscount)
+                let name        = (item["name"] ?? "") as! String
+                let likes       = (item["likes_count"] ?? 0) as! Int
+                let _           = (item["tags"] ?? []) as! [String]
+                let avatar_url  = ((item["user"] as! NSDictionary)["avatar_url"] ?? "") as! String
+                return DribbbleShotsModel(title: title, id: id, username: username,
+                                          viewscount: viewscount, name: name, likes: likes,
+                                          avatar_url: avatar_url)
             })
             completion(shots, nil)
         }

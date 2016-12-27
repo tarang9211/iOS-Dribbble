@@ -9,15 +9,21 @@
 import Foundation
 
 class DribbbleShotsModel {
-    var title   :   String
-    var id      :   Int
-    var username:   String
-    var viewscount: Int
+    var title       : String
+    var id          : Int
+    var username    : String
+    var viewscount  : Int
+    var name        : String
+    var likes       : Int
+    var avatar_url  : URL
     
-    init(title: String, id: Int, username: String, viewscount: Int) {
+    init(title: String, id: Int, username: String, viewscount: Int, name: String, likes: Int, avatar_url: String) {
         self.title      = title
         self.id         = id
         self.username   = username
         self.viewscount = viewscount
+        self.name       = name
+        self.likes      = likes
+        self.avatar_url = URL(string: avatar_url)!
     }
 }

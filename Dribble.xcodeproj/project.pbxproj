@@ -17,6 +17,7 @@
 		2BFF986C1E1255A0002527EE /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF986B1E1255A0002527EE /* HttpService.swift */; };
 		2BFF98711E1255EA002527EE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF98701E1255EA002527EE /* Config.swift */; };
 		2BFF98741E1257B0002527EE /* DribbbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF98731E1257B0002527EE /* DribbbleModel.swift */; };
+		2BFF98761E125BA1002527EE /* DribbbleApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF98751E125BA1002527EE /* DribbbleApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2BFF986B1E1255A0002527EE /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		2BFF98701E1255EA002527EE /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2BFF98731E1257B0002527EE /* DribbbleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleModel.swift; sourceTree = "<group>"; };
+		2BFF98751E125BA1002527EE /* DribbbleApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				2BFF986B1E1255A0002527EE /* HttpService.swift */,
+				2BFF98751E125BA1002527EE /* DribbbleApiService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				2BDD969C1E113B2A0077971F /* ViewController.swift in Sources */,
 				2BFF98711E1255EA002527EE /* Config.swift in Sources */,
+				2BFF98761E125BA1002527EE /* DribbbleApiService.swift in Sources */,
 				2BDD969A1E113B2A0077971F /* AppDelegate.swift in Sources */,
 				2BFF98741E1257B0002527EE /* DribbbleModel.swift in Sources */,
 				2BFF986C1E1255A0002527EE /* HttpService.swift in Sources */,

@@ -14,6 +14,9 @@
 		2BDD96A41E113B2A0077971F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDD96A21E113B2A0077971F /* LaunchScreen.storyboard */; };
 		2BDD96AF1E113B2A0077971F /* DribbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD96AE1E113B2A0077971F /* DribbleTests.swift */; };
 		2BDD96BA1E113B2A0077971F /* DribbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD96B91E113B2A0077971F /* DribbleUITests.swift */; };
+		2BFF986C1E1255A0002527EE /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF986B1E1255A0002527EE /* HttpService.swift */; };
+		2BFF98711E1255EA002527EE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF98701E1255EA002527EE /* Config.swift */; };
+		2BFF98741E1257B0002527EE /* DribbbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF98731E1257B0002527EE /* DribbbleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2BDD96B51E113B2A0077971F /* DribbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DribbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDD96B91E113B2A0077971F /* DribbleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DribbleUITests.swift; sourceTree = "<group>"; };
 		2BDD96BB1E113B2A0077971F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BFF986B1E1255A0002527EE /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		2BFF98701E1255EA002527EE /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2BFF98731E1257B0002527EE /* DribbbleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		2BDD96981E113B2A0077971F /* Dribble */ = {
 			isa = PBXGroup;
 			children = (
+				2BFF98721E1257A6002527EE /* Models */,
+				2BFF986F1E1255E2002527EE /* Config */,
+				2BFF986D1E1255B3002527EE /* ViewControllers */,
+				2BFF986A1E125597002527EE /* Services */,
 				2BDD96991E113B2A0077971F /* AppDelegate.swift */,
-				2BDD969B1E113B2A0077971F /* ViewController.swift */,
 				2BDD969D1E113B2A0077971F /* Main.storyboard */,
 				2BDD96A01E113B2A0077971F /* Assets.xcassets */,
 				2BDD96A21E113B2A0077971F /* LaunchScreen.storyboard */,
@@ -123,6 +132,38 @@
 				2BDD96BB1E113B2A0077971F /* Info.plist */,
 			);
 			path = DribbleUITests;
+			sourceTree = "<group>";
+		};
+		2BFF986A1E125597002527EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2BFF986B1E1255A0002527EE /* HttpService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		2BFF986D1E1255B3002527EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BDD969B1E113B2A0077971F /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2BFF986F1E1255E2002527EE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2BFF98701E1255EA002527EE /* Config.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		2BFF98721E1257A6002527EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BFF98731E1257B0002527EE /* DribbbleModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BDD969C1E113B2A0077971F /* ViewController.swift in Sources */,
+				2BFF98711E1255EA002527EE /* Config.swift in Sources */,
 				2BDD969A1E113B2A0077971F /* AppDelegate.swift in Sources */,
+				2BFF98741E1257B0002527EE /* DribbbleModel.swift in Sources */,
+				2BFF986C1E1255A0002527EE /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +550,7 @@
 				2BDD96C01E113B2A0077971F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BDD96C11E113B2A0077971F /* Build configuration list for PBXNativeTarget "DribbleTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +559,7 @@
 				2BDD96C31E113B2A0077971F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BDD96C41E113B2A0077971F /* Build configuration list for PBXNativeTarget "DribbleUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +568,7 @@
 				2BDD96C61E113B2A0077971F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

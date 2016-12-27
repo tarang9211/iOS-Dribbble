@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShotsViewController: UITableViewController {
+class ShotsViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

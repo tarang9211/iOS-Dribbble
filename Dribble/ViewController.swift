@@ -13,11 +13,19 @@ class ShotsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        getShots()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func getShots() {
+        DribbleApiService.fetchShots { (models, error) in
+            
+        }
     }
 
 

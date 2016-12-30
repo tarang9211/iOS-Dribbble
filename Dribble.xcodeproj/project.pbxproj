@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BDD969A1E113B2A0077971F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD96991E113B2A0077971F /* AppDelegate.swift */; };
-		2BDD969C1E113B2A0077971F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD969B1E113B2A0077971F /* ViewController.swift */; };
+		2BDD969C1E113B2A0077971F /* ShotCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD969B1E113B2A0077971F /* ShotCollectionViewController.swift */; };
 		2BDD969F1E113B2A0077971F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDD969D1E113B2A0077971F /* Main.storyboard */; };
 		2BDD96A11E113B2A0077971F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BDD96A01E113B2A0077971F /* Assets.xcassets */; };
 		2BDD96A41E113B2A0077971F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDD96A21E113B2A0077971F /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		2BDD96961E113B2A0077971F /* Dribble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dribble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDD96991E113B2A0077971F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BDD969B1E113B2A0077971F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BDD969B1E113B2A0077971F /* ShotCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotCollectionViewController.swift; sourceTree = "<group>"; };
 		2BDD969E1E113B2A0077971F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BDD96A01E113B2A0077971F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BDD96A31E113B2A0077971F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		2BFF986D1E1255B3002527EE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2BDD969B1E113B2A0077971F /* ViewController.swift */,
+				2BDD969B1E113B2A0077971F /* ShotCollectionViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -304,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BDD969C1E113B2A0077971F /* ViewController.swift in Sources */,
+				2BDD969C1E113B2A0077971F /* ShotCollectionViewController.swift in Sources */,
 				2BFF98711E1255EA002527EE /* Config.swift in Sources */,
 				2BFF98761E125BA1002527EE /* DribbbleApiService.swift in Sources */,
 				2BDD969A1E113B2A0077971F /* AppDelegate.swift in Sources */,

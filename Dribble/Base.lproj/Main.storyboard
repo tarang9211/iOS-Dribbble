@@ -13,7 +13,7 @@
         <scene sceneID="40k-qH-Ifw">
             <objects>
                 <collectionViewController id="lbu-Xr-WGt" customClass="ShotsViewController" customModule="Dribble" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="tOF-Lp-z5E">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tOF-Lp-z5E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,14 +43,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKI-Q3-4D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="848.79999999999995" y="257.72113943028489"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="JuC-68-lI0">
-            <objects>
-                <viewControllerPlaceholder id="JEE-AF-ckT" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="msj-oR-LMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="892" y="351.72413793103453"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bHP-Qt-wuP">

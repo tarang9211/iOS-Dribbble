@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShotsViewController: UICollectionViewController {
+class ShotsCollectionViewController: UICollectionViewController {
     
     private var items = [DribbbleShotsModel]() {
         didSet {
@@ -34,7 +34,6 @@ class ShotsViewController: UICollectionViewController {
             }
         }
     }
-
 
 }
 

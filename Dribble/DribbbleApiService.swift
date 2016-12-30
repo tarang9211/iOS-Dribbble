@@ -35,13 +35,16 @@ class DribbleApiService {
                 let likes       = (item["likes_count"] ?? 0) as! Int
                 let _           = (item["tags"] ?? []) as! [String]
                 let avatar_url  = ((item["user"] as! NSDictionary)["avatar_url"] ?? "") as! String
-                let imgUrls     = (item["images"] as! [String: URL])
+                let imgUrls     = (item["images"] as! [String: String])
+
                 
                 return DribbbleShotsModel(title: title, id: id, username: username,
                                           viewscount: viewscount, name: name, likes: likes,
                                           avatar_url: avatar_url, imgUrls: imgUrls)
             })
-            completion(shots, nil)
+            DispatchQueue.main.async {
+                completion(shots, nil)
+            }
         }
     }
 }

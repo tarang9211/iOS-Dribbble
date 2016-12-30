@@ -9,6 +9,12 @@
 import UIKit
 
 class ShotsViewController: UICollectionViewController {
+    
+    private var items = [DribbbleShotsModel]() {
+        didSet {
+            self.collectionView?.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +31,9 @@ class ShotsViewController: UICollectionViewController {
     private func getShots() {
         DribbleApiService.fetchShots { (models, error) in
             
+            if error != nil {
+                self.items = models
+            }
         }
     }
 

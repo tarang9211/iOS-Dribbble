@@ -16,9 +16,9 @@ class DribbbleShotsModel {
     var name        : String
     var likes       : Int
     var avatar_url  : URL
-    var imgUrls     : [String: URL]
+    var imgUrls     : [String: String]
     
-    init(title: String, id: Int, username: String, viewscount: Int, name: String, likes: Int, avatar_url: String, imgUrls: [String: URL]) {
+    init(title: String, id: Int, username: String, viewscount: Int, name: String, likes: Int, avatar_url: String, imgUrls: [String: String]) {
         self.title      = title
         self.id         = id
         self.username   = username

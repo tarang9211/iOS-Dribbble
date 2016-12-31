@@ -8,26 +8,32 @@
 
 import UIKit
 
-class ShotsViewController: UICollectionViewController {
+class ShotsCollectionViewController: UICollectionViewController {
+    
+    private var items = [DribbbleShotsModel]() {
+        didSet {
+            self.collectionView?.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         getShots()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     private func getShots() {
         DribbleApiService.fetchShots { (models, error) in
             
+            if error != nil {
+                self.items = models
+            }
         }
     }
-
 
 }
 

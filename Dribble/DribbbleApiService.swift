@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias Shots_Alias = ([DribbbleShotsModel], NSError?) -> Void
+typealias Shots_Alias = ([DribbbleShotsModel]?, NSError?) -> Void
 
 /*DribbleApiService will call the generic HttpService helper functions*/
 class DribbleApiService {
@@ -35,7 +35,7 @@ class DribbleApiService {
                 let likes       = (item["likes_count"] ?? 0) as! Int
                 let _           = (item["tags"] ?? []) as! [String]
                 let avatar_url  = ((item["user"] as! NSDictionary)["avatar_url"] ?? "") as! String
-                let imgUrls     = (item["images"] as! [String: String])
+                let imgUrls     = (item["images"] as! [String: String?])
 
                 
                 return DribbbleShotsModel(title: title, id: id, username: username,

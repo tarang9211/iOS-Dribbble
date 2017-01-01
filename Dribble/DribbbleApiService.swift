@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias Shots_Alias = ([DribbbleShotsModel], NSError?) -> Void
+typealias Shots_Alias = ([DribbbleShotsModel]?, NSError?) -> Void
 
 /*DribbleApiService will call the generic HttpService helper functions*/
 class DribbleApiService {

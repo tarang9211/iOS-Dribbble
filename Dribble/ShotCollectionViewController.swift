@@ -30,8 +30,14 @@ class ShotsCollectionViewController: UICollectionViewController {
         DribbleApiService.fetchShots { (models, error) in
             
             if error != nil {
-                self.items = models
+                //handle error
             }
+            
+            guard let shots = models else {
+                return
+            }
+            
+            self.items = shots
         }
     }
 

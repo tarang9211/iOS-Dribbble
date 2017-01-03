@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Foundation
 @testable import Dribble
 
 class DribbleTests: XCTestCase {
@@ -29,8 +30,20 @@ class DribbleTests: XCTestCase {
     }
     
     func testURLIsAppropriate() {
-        let url = Config.rootUrl + "?access_token=\(Config.accessToken)"
+        let url = URL(string: Config.rootUrl + "?access_token=\(Config.accessToken)")!
         XCTAssertNotNil(url, "URL is not nil")
     }
+    
+    func testHttpFetchData() {
+        let url = URL(string: Config.rootUrl + "?access_token=\(Config.accessToken)")!
+
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            XCTAssertNotNil(data, "Data should not be nill")
+        }
+        
+        task.resume()
+        
+    }
+    
     
 }

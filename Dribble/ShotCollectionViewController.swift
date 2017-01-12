@@ -12,17 +12,21 @@ let cellIdentifier = "ShotCell"
 
 class ShotsCollectionViewController: UICollectionViewController {
     
+    private var loader: UIActivityIndicatorView? = nil
+    
     private var items = [DribbbleShotsModel]() {
         didSet {
             self.collectionView?.reloadData()
+            loader?.stopAnimating()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        layoutCells()
         collectionView?.register(UINib(nibName: cellIdentifier, bundle: nil) , forCellWithReuseIdentifier: cellIdentifier)
         
+        setUpLoader()
         getShots()
     }
 
@@ -40,6 +44,25 @@ class ShotsCollectionViewController: UICollectionViewController {
         return cell
     }
     
+    private func setUpLoader() {
+        loader = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        loader?.center = self.view.center
+        loader?.startAnimating()
+        self.view.addSubview(loader!)
+    }
+    
+    
+    //setting up custom layout for collection view
+    private func layoutCells() {
+        let layout = UICollectionViewFlowLayout()
+        
+        layout.itemSize = CGSize(width: (collectionView?.bounds.width)!-16, height: (collectionView?.bounds.height)! * 0.35)
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 8, bottom: 20, right: 8)
+        
+        self.collectionView?.setCollectionViewLayout(layout, animated: false)
+    }
+    
+    //method call to fetch shots from the API
     private func getShots() {
         DribbleApiService.fetchShots { (models, error) in
             

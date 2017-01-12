@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BC8F5CF1E1919A70065DFC3 /* ShotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8F5CD1E1919A70065DFC3 /* ShotCell.swift */; };
+		2BC8F5D01E1919A70065DFC3 /* ShotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC8F5CE1E1919A70065DFC3 /* ShotCell.xib */; };
 		2BDD969A1E113B2A0077971F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD96991E113B2A0077971F /* AppDelegate.swift */; };
 		2BDD969C1E113B2A0077971F /* ShotCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD969B1E113B2A0077971F /* ShotCollectionViewController.swift */; };
 		2BDD969F1E113B2A0077971F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDD969D1E113B2A0077971F /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BC8F5CD1E1919A70065DFC3 /* ShotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotCell.swift; sourceTree = "<group>"; };
+		2BC8F5CE1E1919A70065DFC3 /* ShotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotCell.xib; sourceTree = "<group>"; };
 		2BDD96961E113B2A0077971F /* Dribble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dribble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDD96991E113B2A0077971F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BDD969B1E113B2A0077971F /* ShotCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotCollectionViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BC8F5CC1E1919890065DFC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BC8F5CD1E1919A70065DFC3 /* ShotCell.swift */,
+				2BC8F5CE1E1919A70065DFC3 /* ShotCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		2BDD968D1E113B290077971F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 		2BDD96981E113B2A0077971F /* Dribble */ = {
 			isa = PBXGroup;
 			children = (
+				2BC8F5CC1E1919890065DFC3 /* Views */,
 				2BFF98721E1257A6002527EE /* Models */,
 				2BFF986F1E1255E2002527EE /* Config */,
 				2BFF986D1E1255B3002527EE /* ViewControllers */,
@@ -280,6 +294,7 @@
 				2BDD96A41E113B2A0077971F /* LaunchScreen.storyboard in Resources */,
 				2BDD96A11E113B2A0077971F /* Assets.xcassets in Resources */,
 				2BDD969F1E113B2A0077971F /* Main.storyboard in Resources */,
+				2BC8F5D01E1919A70065DFC3 /* ShotCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BDD969C1E113B2A0077971F /* ShotCollectionViewController.swift in Sources */,
+				2BC8F5CF1E1919A70065DFC3 /* ShotCell.swift in Sources */,
 				2BFF98711E1255EA002527EE /* Config.swift in Sources */,
 				2BFF98761E125BA1002527EE /* DribbbleApiService.swift in Sources */,
 				2BDD969A1E113B2A0077971F /* AppDelegate.swift in Sources */,

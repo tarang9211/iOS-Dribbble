@@ -9,12 +9,20 @@
 import UIKit
 
 class ShotCell: UICollectionViewCell {
-
+    
+    var shot: DribbbleShotsModel?
+    
     override func awakeFromNib() {
+        
+
         super.awakeFromNib()
         // Initialization code
         
-        contentView.backgroundColor = UIColor.red
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = UIColor.red
+        self.layer.cornerRadius = CGFloat(5)
+        self.layer.masksToBounds = false
+        
     }
 
 }

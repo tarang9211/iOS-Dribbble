@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B336E091E27FBCD004CBF44 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B336E081E27FBCD004CBF44 /* Color.swift */; };
 		2BC8F5CF1E1919A70065DFC3 /* ShotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8F5CD1E1919A70065DFC3 /* ShotCell.swift */; };
 		2BC8F5D01E1919A70065DFC3 /* ShotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC8F5CE1E1919A70065DFC3 /* ShotCell.xib */; };
 		2BDD969A1E113B2A0077971F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD96991E113B2A0077971F /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B336E081E27FBCD004CBF44 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		2BC8F5CD1E1919A70065DFC3 /* ShotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotCell.swift; sourceTree = "<group>"; };
 		2BC8F5CE1E1919A70065DFC3 /* ShotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotCell.xib; sourceTree = "<group>"; };
 		2BDD96961E113B2A0077971F /* Dribble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dribble.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B336E071E27FBC2004CBF44 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2B336E081E27FBCD004CBF44 /* Color.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		2BC8F5CC1E1919890065DFC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		2BDD96981E113B2A0077971F /* Dribble */ = {
 			isa = PBXGroup;
 			children = (
+				2B336E071E27FBC2004CBF44 /* Utils */,
 				2BC8F5CC1E1919890065DFC3 /* Views */,
 				2BFF98721E1257A6002527EE /* Models */,
 				2BFF986F1E1255E2002527EE /* Config */,
@@ -324,6 +335,7 @@
 				2BFF98711E1255EA002527EE /* Config.swift in Sources */,
 				2BFF98761E125BA1002527EE /* DribbbleApiService.swift in Sources */,
 				2BDD969A1E113B2A0077971F /* AppDelegate.swift in Sources */,
+				2B336E091E27FBCD004CBF44 /* Color.swift in Sources */,
 				2BFF98741E1257B0002527EE /* DribbbleShotsModel.swift in Sources */,
 				2BFF986C1E1255A0002527EE /* HttpService.swift in Sources */,
 			);

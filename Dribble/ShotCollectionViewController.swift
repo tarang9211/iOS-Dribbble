@@ -24,7 +24,9 @@ class ShotsCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutCells()
+        collectionView?.backgroundColor = UIColor.collectionViewBackgroundColor
         collectionView?.register(UINib(nibName: cellIdentifier, bundle: nil) , forCellWithReuseIdentifier: cellIdentifier)
+        
         
         setUpLoader()
         getShots()
@@ -40,7 +42,7 @@ class ShotsCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! ShotCell
-        let shot = items[indexPath.row]
+        cell.shot = items[indexPath.row] //pass the shot model to each cell
         return cell
     }
     
@@ -56,8 +58,9 @@ class ShotsCollectionViewController: UICollectionViewController {
     private func layoutCells() {
         let layout = UICollectionViewFlowLayout()
         
-        layout.itemSize = CGSize(width: (collectionView?.bounds.width)!-16, height: (collectionView?.bounds.height)! * 0.35)
+        layout.itemSize = CGSize(width: (collectionView?.bounds.width)!-16, height: (collectionView?.bounds.height)! * 0.40)
         layout.sectionInset = UIEdgeInsets(top: 20, left: 8, bottom: 20, right: 8)
+        layout.minimumLineSpacing = 20
         
         self.collectionView?.setCollectionViewLayout(layout, animated: false)
     }

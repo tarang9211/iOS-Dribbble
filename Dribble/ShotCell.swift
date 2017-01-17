@@ -10,7 +10,12 @@ import UIKit
 
 class ShotCell: UICollectionViewCell {
     
-    var shot: DribbbleShotsModel?
+    @IBOutlet weak var shotImageView: UIImageView!
+    var shot: DribbbleShotsModel? {
+        didSet {
+            setupCell()
+        }
+    }
     
     override func awakeFromNib() {
         
@@ -22,6 +27,10 @@ class ShotCell: UICollectionViewCell {
         self.backgroundColor = UIColor.red
         self.layer.cornerRadius = CGFloat(5)
         self.layer.masksToBounds = false
+        
+    }
+    
+    func setupCell() {
         
     }
 

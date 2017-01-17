@@ -42,7 +42,7 @@ class ShotsCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! ShotCell
-        cell.shot = items[indexPath.row] //pass the shot model to each cell
+        cell.shot = items[indexPath.row]
         return cell
     }
     

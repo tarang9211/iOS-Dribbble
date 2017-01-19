@@ -27,20 +27,19 @@ class DribbleApiService {
             
             let shots: [DribbbleShotsModel] = response.map({ (data) -> DribbbleShotsModel in
                 let item        = data as! NSDictionary
-                let title       = (item["title"] ?? "") as! String
-                let id          = (item["id"] ?? 0) as! Int
-                let username    = (item["username"] ?? "") as! String
-                let viewscount  = (item["views_count"] ?? 0) as! Int
-                let name        = (item["name"] ?? "") as! String
-                let likes       = (item["likes_count"] ?? 0) as! Int
-                let _           = (item["tags"] ?? []) as! [String]
-                let avatar_url  = ((item["user"] as! NSDictionary)["avatar_url"] ?? "") as! String
-                let imgUrls     = (item["images"] as! [String: String?])
-
+                let title       = item["title"] as? String ?? ""
+                let id          = item["id"] as? Int ?? 0
+                let username    = item["username"] as? String ?? ""
+                let viewscount  = item["views_count"] as? Int ?? 0
+                let name        = item["name"] as? String ?? ""
+                let likes       = item["likes_count"] as? Int ?? 0
+                let _           = item["tags"] as? [String] ?? []
+                let avatar      = (item["user"] as? NSDictionary)?["avatar_url"] as? String
+                let imgUrls     = (item["images"] as! [String: Any])
                 
                 return DribbbleShotsModel(title: title, id: id, username: username,
                                           viewscount: viewscount, name: name, likes: likes,
-                                          avatar_url: avatar_url, imgUrls: imgUrls)
+                                          avatar_url: avatar, imgUrls: imgUrls)
             })
             DispatchQueue.main.async {
                 completion(shots, nil)

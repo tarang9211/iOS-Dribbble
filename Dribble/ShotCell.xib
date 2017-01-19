@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,55 +28,26 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcy-uW-QdD">
                         <rect key="frame" x="0.0" y="188" width="434" height="100"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="AnN-5j-lYl">
-                                <rect key="frame" x="0.0" y="0.0" width="434" height="100"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2D-nd-Lf6">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="100"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g19-XC-ieG">
-                                                <rect key="frame" x="47.5" y="25" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="06I-hG-6dn"/>
-                                                    <constraint firstAttribute="height" constant="50" id="7oT-GK-6If"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="g19-XC-ieG" firstAttribute="centerX" secondItem="t2D-nd-Lf6" secondAttribute="centerX" id="eib-wx-6qn"/>
-                                            <constraint firstItem="g19-XC-ieG" firstAttribute="centerY" secondItem="t2D-nd-Lf6" secondAttribute="centerY" id="xaM-yg-dRL"/>
-                                        </constraints>
-                                    </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Igq-6K-NNS">
-                                        <rect key="frame" x="145" y="0.0" width="144" height="100"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBB-8X-1Yi">
-                                                <rect key="frame" x="0.0" y="0.0" width="144" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyv-Cc-CnS">
-                                                <rect key="frame" x="0.0" y="50" width="144" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LlD-PC-f2Q">
-                                        <rect key="frame" x="290" y="0.0" width="144" height="100"/>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="qQa-Ro-yRu" userLabel="Profile Image View">
+                                <rect key="frame" x="16" y="34" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3fy-NG-boH"/>
+                                    <constraint firstAttribute="height" constant="50" id="FBR-bv-7OK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2B-Rm-1Qr">
+                                <rect key="frame" x="82" y="67.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AnN-5j-lYl" firstAttribute="top" secondItem="Mcy-uW-QdD" secondAttribute="top" id="RUf-uS-i0o"/>
-                            <constraint firstAttribute="trailing" secondItem="AnN-5j-lYl" secondAttribute="trailing" id="ZQH-Pa-CuX"/>
-                            <constraint firstItem="AnN-5j-lYl" firstAttribute="leading" secondItem="Mcy-uW-QdD" secondAttribute="leading" id="lCC-pD-Rfr"/>
-                            <constraint firstAttribute="bottom" secondItem="AnN-5j-lYl" secondAttribute="bottom" id="qW2-r1-cNb"/>
+                            <constraint firstItem="S2B-Rm-1Qr" firstAttribute="baseline" secondItem="qQa-Ro-yRu" secondAttribute="baseline" id="4pp-3B-FAd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qQa-Ro-yRu" secondAttribute="bottom" constant="8" id="Jhd-pE-fDK"/>
+                            <constraint firstItem="qQa-Ro-yRu" firstAttribute="leading" secondItem="Mcy-uW-QdD" secondAttribute="leadingMargin" constant="8" id="gTx-Cw-Wfx"/>
+                            <constraint firstItem="S2B-Rm-1Qr" firstAttribute="leading" secondItem="qQa-Ro-yRu" secondAttribute="trailing" constant="16" id="iyB-V4-lTd"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -96,4 +68,7 @@
             <point key="canvasLocation" x="-158" y="173"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="avatar" width="640" height="640"/>
+    </resources>
 </document>

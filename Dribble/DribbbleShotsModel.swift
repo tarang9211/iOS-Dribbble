@@ -15,17 +15,41 @@ class DribbbleShotsModel {
     var viewscount  : Int
     var name        : String
     var likes       : Int
-    var avatar_url  : URL
-    var imgUrls     : [String: String?]
+    var avatar_url  : URL?
+    var imgUrls     : [String: Any]
     
-    init(title: String, id: Int, username: String, viewscount: Int, name: String, likes: Int, avatar_url: String, imgUrls: [String: String?]) {
+    init(title: String, id: Int, username: String, viewscount: Int, name: String, likes: Int, avatar_url: String?, imgUrls: [String: Any]) {
         self.title      = title
         self.id         = id
         self.username   = username
         self.viewscount = viewscount
         self.name       = name
         self.likes      = likes
-        self.avatar_url = URL(string: avatar_url)!
         self.imgUrls    = imgUrls
+        
+        if let url = avatar_url, let avatar = URL(string: url) {
+            self.avatar_url = avatar
+        } else {
+            self.avatar_url = nil
+        }
+    }
+}
+
+extension DribbbleShotsModel {
+    class func returnValidShotURL(urls: [String: Any]) -> URL?{
+        
+        if let normalUrl = urls["normal"] as? String, let url = URL(string: normalUrl) {
+            return url
+        }
+        
+        if let teaserUrl = urls["teaser"] as? String, let url = URL(string: teaserUrl) {
+            return url
+        }
+        
+        if let hidpiUrl = urls["hidpi"] as? String, let url = URL(string: hidpiUrl) {
+            return url
+        }
+        
+        return nil
     }
 }

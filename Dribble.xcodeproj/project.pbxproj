@@ -60,7 +60,7 @@
 		112FC5A44D622B3821A7ED94 /* Pods_DribbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DribbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		128BF15A782868E5534D0505 /* Pods-Dribble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dribble.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dribble/Pods-Dribble.release.xcconfig"; sourceTree = "<group>"; };
 		236226D98610A1704B5ACECE /* Pods_Dribble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dribble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B336E081E27FBCD004CBF44 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2B336E081E27FBCD004CBF44 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; usesTabs = 0; };
 		2BC8F5CD1E1919A70065DFC3 /* ShotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotCell.swift; sourceTree = "<group>"; };
 		2BC8F5CE1E1919A70065DFC3 /* ShotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotCell.xib; sourceTree = "<group>"; };
 		2BDD96961E113B2A0077971F /* Dribble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dribble.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +261,7 @@
 				2BFA4B181E2FE94D0032CDC7 /* Copy Files (1 item) */,
 				220BE05EC50C8F90940A0288 /* [CP] Embed Pods Frameworks */,
 				BC96D6EF0C166ACB90575661 /* [CP] Copy Pods Resources */,
+				29DCFA151E37D8F20035FD57 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -281,6 +282,7 @@
 				2BDD96A81E113B2A0077971F /* Resources */,
 				333DEC58879024CD17706AEF /* [CP] Embed Pods Frameworks */,
 				A679442269F230BB9FF9CC57 /* [CP] Copy Pods Resources */,
+				29DCFA141E37D8B70035FD57 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -417,6 +419,34 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dribble/Pods-Dribble-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		29DCFA141E37D8B70035FD57 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		29DCFA151E37D8F20035FD57 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		333DEC58879024CD17706AEF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

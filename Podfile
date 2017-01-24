@@ -6,6 +6,7 @@ target 'Dribble' do
   use_frameworks!
 
   # Pods for Dribble
+  pod 'Kingfisher', '~> 3.2.2'
 
   target 'DribbleTests' do
     inherit! :search_paths

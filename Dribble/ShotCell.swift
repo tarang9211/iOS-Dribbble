@@ -29,8 +29,7 @@ class ShotCell: UICollectionViewCell {
         self.layer.shadowOffset = CGSize(width:0, height: 2.0)
         self.layer.shadowOpacity = 0.2
         self.layer.masksToBounds = false
-        
-        
+
     }
     
     func setupCell(_ shot: DribbbleShotsModel) {

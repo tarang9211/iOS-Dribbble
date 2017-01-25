@@ -17,11 +17,13 @@
 		2BDD96A41E113B2A0077971F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDD96A21E113B2A0077971F /* LaunchScreen.storyboard */; };
 		2BDD96AF1E113B2A0077971F /* DribbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD96AE1E113B2A0077971F /* DribbleTests.swift */; };
 		2BDD96BA1E113B2A0077971F /* DribbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD96B91E113B2A0077971F /* DribbleUITests.swift */; };
-		2BFA4B441E2FEA080032CDC7 /* Kingfisher.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 2BFA4B2A1E2FE9A70032CDC7 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BFF986C1E1255A0002527EE /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF986B1E1255A0002527EE /* HttpService.swift */; };
 		2BFF98711E1255EA002527EE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF98701E1255EA002527EE /* Config.swift */; };
 		2BFF98741E1257B0002527EE /* DribbbleShotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF98731E1257B0002527EE /* DribbbleShotsModel.swift */; };
 		2BFF98761E125BA1002527EE /* DribbbleApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF98751E125BA1002527EE /* DribbbleApiService.swift */; };
+		A4A07A28DBE61E5C677F4EC6 /* Pods_DribbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FAD3C1F91969A248921D5A /* Pods_DribbleTests.framework */; };
+		B2C042864BB884B1D90CE867 /* Pods_Dribble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667094D560EB69BAD70E9F3 /* Pods_Dribble.framework */; };
+		F8B967673CA460705B547FCA /* Pods_DribbleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25547ECF640BC810320377B5 /* Pods_DribbleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,97 +41,6 @@
 			remoteGlobalIDString = 2BDD96951E113B290077971F;
 			remoteInfo = Dribble;
 		};
-		2BFA4B291E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
-			remoteInfo = "Kingfisher-iOS";
-		};
-		2BFA4B2B1E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D13F49D61BEDA67C00CE335D;
-			remoteInfo = "Kingfisher-tvOS";
-		};
-		2BFA4B2D1E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B2944481C3D01B20088C3E7;
-			remoteInfo = "Kingfisher-macOS";
-		};
-		2BFA4B2F1E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D16799EB1C4E74460020FD12;
-			remoteInfo = "Kingfisher-watchOS";
-		};
-		2BFA4B311E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D1ED2D0B1AD2CFA600CFC3EB;
-			remoteInfo = "Kingfisher-Demo";
-		};
-		2BFA4B331E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D13F49C21BEDA53F00CE335D;
-			remoteInfo = "Kingfisher-tvOS-Demo";
-		};
-		2BFA4B351E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B2944551C3D03880088C3E7;
-			remoteInfo = "Kingfisher-macOS-Demo";
-		};
-		2BFA4B371E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D1679A391C4E78B20020FD12;
-			remoteInfo = "Kingfisher-watchOS-Demo";
-		};
-		2BFA4B391E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D1679A451C4E78B20020FD12;
-			remoteInfo = "Kingfisher-watchOS-Demo Extension";
-		};
-		2BFA4B3B1E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
-			remoteInfo = KingfisherTests;
-		};
-		2BFA4B3D1E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B37667F1C478F940001443F;
-			remoteInfo = "KingfisherTests-tvOS";
-		};
-		2BFA4B3F1E2FE9A70032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D10EC2311C3D632300A4211C;
-			remoteInfo = "KingfisherTests-macOS";
-		};
-		2BFA4B411E2FE9C20032CDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
-			remoteInfo = "Kingfisher-iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -139,7 +50,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2BFA4B441E2FEA080032CDC7 /* Kingfisher.framework in Copy Files (1 item) */,
 			);
 			name = "Copy Files (1 item)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +57,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0667094D560EB69BAD70E9F3 /* Pods_Dribble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dribble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1890AF710089690F2AE16E3A /* Pods-DribbleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DribbleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DribbleTests/Pods-DribbleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25547ECF640BC810320377B5 /* Pods_DribbleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DribbleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2742676D6D7BB2E65FFD0C81 /* Pods-DribbleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DribbleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DribbleUITests/Pods-DribbleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2B336E081E27FBCD004CBF44 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		2BC8F5CD1E1919A70065DFC3 /* ShotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotCell.swift; sourceTree = "<group>"; };
 		2BC8F5CE1E1919A70065DFC3 /* ShotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotCell.xib; sourceTree = "<group>"; };
@@ -163,11 +77,15 @@
 		2BDD96B51E113B2A0077971F /* DribbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DribbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDD96B91E113B2A0077971F /* DribbleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DribbleUITests.swift; sourceTree = "<group>"; };
 		2BDD96BB1E113B2A0077971F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
 		2BFF986B1E1255A0002527EE /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		2BFF98701E1255EA002527EE /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2BFF98731E1257B0002527EE /* DribbbleShotsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleShotsModel.swift; sourceTree = "<group>"; };
 		2BFF98751E125BA1002527EE /* DribbbleApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleApiService.swift; sourceTree = "<group>"; };
+		4E8302ED8D65BC8B6354DCB3 /* Pods-DribbleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DribbleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DribbleUITests/Pods-DribbleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E9912DBBCB0D6748C10DABC /* Pods-Dribble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dribble.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dribble/Pods-Dribble.release.xcconfig"; sourceTree = "<group>"; };
+		A0FB2E8BDFE45213368CE1F5 /* Pods-Dribble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dribble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dribble/Pods-Dribble.debug.xcconfig"; sourceTree = "<group>"; };
+		E6FAD3C1F91969A248921D5A /* Pods_DribbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DribbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E773A72BD2ADB09E7B3DA3BA /* Pods-DribbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DribbleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DribbleTests/Pods-DribbleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C042864BB884B1D90CE867 /* Pods_Dribble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A07A28DBE61E5C677F4EC6 /* Pods_DribbleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B967673CA460705B547FCA /* Pods_DribbleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +140,8 @@
 				2BDD96AD1E113B2A0077971F /* DribbleTests */,
 				2BDD96B81E113B2A0077971F /* DribbleUITests */,
 				2BDD96971E113B2A0077971F /* Products */,
-				2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */,
+				CDC6547FAAE8483067989B56 /* Pods */,
+				635919D339207163B9838A63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,25 +191,6 @@
 			path = DribbleUITests;
 			sourceTree = "<group>";
 		};
-		2BFA4B1B1E2FE9A60032CDC7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2BFA4B2A1E2FE9A70032CDC7 /* Kingfisher.framework */,
-				2BFA4B2C1E2FE9A70032CDC7 /* Kingfisher.framework */,
-				2BFA4B2E1E2FE9A70032CDC7 /* Kingfisher.framework */,
-				2BFA4B301E2FE9A70032CDC7 /* Kingfisher.framework */,
-				2BFA4B321E2FE9A70032CDC7 /* Kingfisher-Demo.app */,
-				2BFA4B341E2FE9A70032CDC7 /* Kingfisher-tvOS-Demo.app */,
-				2BFA4B361E2FE9A70032CDC7 /* Kingfisher-macOS-Demo.app */,
-				2BFA4B381E2FE9A70032CDC7 /* Kingfisher-watchOS-Demo.app */,
-				2BFA4B3A1E2FE9A70032CDC7 /* Kingfisher-watchOS-Demo Extension.appex */,
-				2BFA4B3C1E2FE9A70032CDC7 /* KingfisherTests.xctest */,
-				2BFA4B3E1E2FE9A70032CDC7 /* KingfisherTests-tvOS.xctest */,
-				2BFA4B401E2FE9A70032CDC7 /* KingfisherTests-macOS.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2BFF986A1E125597002527EE /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +224,29 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		635919D339207163B9838A63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0667094D560EB69BAD70E9F3 /* Pods_Dribble.framework */,
+				E6FAD3C1F91969A248921D5A /* Pods_DribbleTests.framework */,
+				25547ECF640BC810320377B5 /* Pods_DribbleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDC6547FAAE8483067989B56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB2E8BDFE45213368CE1F5 /* Pods-Dribble.debug.xcconfig */,
+				8E9912DBBCB0D6748C10DABC /* Pods-Dribble.release.xcconfig */,
+				1890AF710089690F2AE16E3A /* Pods-DribbleTests.debug.xcconfig */,
+				E773A72BD2ADB09E7B3DA3BA /* Pods-DribbleTests.release.xcconfig */,
+				4E8302ED8D65BC8B6354DCB3 /* Pods-DribbleUITests.debug.xcconfig */,
+				2742676D6D7BB2E65FFD0C81 /* Pods-DribbleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,15 +254,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BDD96BE1E113B2A0077971F /* Build configuration list for PBXNativeTarget "Dribble" */;
 			buildPhases = (
+				DD63E493F61C4CE88ACA2A4C /* [CP] Check Pods Manifest.lock */,
 				2BDD96921E113B290077971F /* Sources */,
 				2BDD96931E113B290077971F /* Frameworks */,
 				2BDD96941E113B290077971F /* Resources */,
 				2BFA4B181E2FE94D0032CDC7 /* Copy Files (1 item) */,
+				A92A07719B09C53B4BEE78C9 /* [CP] Embed Pods Frameworks */,
+				01C6C1899ADAAEEA459F87EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2BFA4B421E2FE9C20032CDC7 /* PBXTargetDependency */,
 			);
 			name = Dribble;
 			productName = Dribble;
@@ -347,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BDD96C11E113B2A0077971F /* Build configuration list for PBXNativeTarget "DribbleTests" */;
 			buildPhases = (
+				FA1C862947E4D8D3DBCCFAA5 /* [CP] Check Pods Manifest.lock */,
 				2BDD96A61E113B2A0077971F /* Sources */,
 				2BDD96A71E113B2A0077971F /* Frameworks */,
 				2BDD96A81E113B2A0077971F /* Resources */,
+				25052CB7786586665FFA7AC0 /* [CP] Embed Pods Frameworks */,
+				F9084CBE3A7F7E81AFE9CAE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -365,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BDD96C41E113B2A0077971F /* Build configuration list for PBXNativeTarget "DribbleUITests" */;
 			buildPhases = (
+				79BB2575F68BE2DE4746243E /* [CP] Check Pods Manifest.lock */,
 				2BDD96B11E113B2A0077971F /* Sources */,
 				2BDD96B21E113B2A0077971F /* Frameworks */,
 				2BDD96B31E113B2A0077971F /* Resources */,
+				37C52AF211BFEB9EBB9DB102 /* [CP] Embed Pods Frameworks */,
+				91F4AC947E7BAF129205BA73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -417,12 +351,6 @@
 			mainGroup = 2BDD968D1E113B290077971F;
 			productRefGroup = 2BDD96971E113B2A0077971F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 2BFA4B1B1E2FE9A60032CDC7 /* Products */;
-					ProjectRef = 2BFA4B1A1E2FE9A60032CDC7 /* Kingfisher.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				2BDD96951E113B290077971F /* Dribble */,
@@ -431,93 +359,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		2BFA4B2A1E2FE9A70032CDC7 /* Kingfisher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Kingfisher.framework;
-			remoteRef = 2BFA4B291E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B2C1E2FE9A70032CDC7 /* Kingfisher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Kingfisher.framework;
-			remoteRef = 2BFA4B2B1E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B2E1E2FE9A70032CDC7 /* Kingfisher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Kingfisher.framework;
-			remoteRef = 2BFA4B2D1E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B301E2FE9A70032CDC7 /* Kingfisher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Kingfisher.framework;
-			remoteRef = 2BFA4B2F1E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B321E2FE9A70032CDC7 /* Kingfisher-Demo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Kingfisher-Demo.app";
-			remoteRef = 2BFA4B311E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B341E2FE9A70032CDC7 /* Kingfisher-tvOS-Demo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Kingfisher-tvOS-Demo.app";
-			remoteRef = 2BFA4B331E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B361E2FE9A70032CDC7 /* Kingfisher-macOS-Demo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Kingfisher-macOS-Demo.app";
-			remoteRef = 2BFA4B351E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B381E2FE9A70032CDC7 /* Kingfisher-watchOS-Demo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Kingfisher-watchOS-Demo.app";
-			remoteRef = 2BFA4B371E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B3A1E2FE9A70032CDC7 /* Kingfisher-watchOS-Demo Extension.appex */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.app-extension";
-			path = "Kingfisher-watchOS-Demo Extension.appex";
-			remoteRef = 2BFA4B391E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B3C1E2FE9A70032CDC7 /* KingfisherTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = KingfisherTests.xctest;
-			remoteRef = 2BFA4B3B1E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B3E1E2FE9A70032CDC7 /* KingfisherTests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "KingfisherTests-tvOS.xctest";
-			remoteRef = 2BFA4B3D1E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2BFA4B401E2FE9A70032CDC7 /* KingfisherTests-macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "KingfisherTests-macOS.xctest";
-			remoteRef = 2BFA4B3F1E2FE9A70032CDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2BDD96941E113B290077971F /* Resources */ = {
@@ -546,6 +387,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01C6C1899ADAAEEA459F87EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dribble/Pods-Dribble-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25052CB7786586665FFA7AC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbleTests/Pods-DribbleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37C52AF211BFEB9EBB9DB102 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbleUITests/Pods-DribbleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79BB2575F68BE2DE4746243E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91F4AC947E7BAF129205BA73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbleUITests/Pods-DribbleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A92A07719B09C53B4BEE78C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dribble/Pods-Dribble-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD63E493F61C4CE88ACA2A4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9084CBE3A7F7E81AFE9CAE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbleTests/Pods-DribbleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA1C862947E4D8D3DBCCFAA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BDD96921E113B290077971F /* Sources */ = {
@@ -591,11 +570,6 @@
 			isa = PBXTargetDependency;
 			target = 2BDD96951E113B290077971F /* Dribble */;
 			targetProxy = 2BDD96B61E113B2A0077971F /* PBXContainerItemProxy */;
-		};
-		2BFA4B421E2FE9C20032CDC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Kingfisher-iOS";
-			targetProxy = 2BFA4B411E2FE9C20032CDC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -712,6 +686,7 @@
 		};
 		2BDD96BF1E113B2A0077971F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FB2E8BDFE45213368CE1F5 /* Pods-Dribble.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BANP39CCYX;
@@ -725,6 +700,7 @@
 		};
 		2BDD96C01E113B2A0077971F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9912DBBCB0D6748C10DABC /* Pods-Dribble.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BANP39CCYX;
@@ -738,6 +714,7 @@
 		};
 		2BDD96C21E113B2A0077971F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1890AF710089690F2AE16E3A /* Pods-DribbleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -752,6 +729,7 @@
 		};
 		2BDD96C31E113B2A0077971F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E773A72BD2ADB09E7B3DA3BA /* Pods-DribbleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -766,6 +744,7 @@
 		};
 		2BDD96C51E113B2A0077971F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E8302ED8D65BC8B6354DCB3 /* Pods-DribbleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DribbleUITests/Info.plist;
@@ -779,6 +758,7 @@
 		};
 		2BDD96C61E113B2A0077971F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2742676D6D7BB2E65FFD0C81 /* Pods-DribbleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DribbleUITests/Info.plist;
